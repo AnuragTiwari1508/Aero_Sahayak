@@ -26,8 +26,7 @@ The overall acoustic-attenuation system is designed around two parallel processi
 
 Before RTL design, the signal-processing algorithm was validated in Python using NumPy/SciPy/librosa. The optimal step size ($\mu$) for the LMS filter was determined through a $\mu$-sweep for fastest convergence and lowest steady-state error.
 
-![Python Analysis Dashboard](docs/images/python_analysis.png)
-*(Screenshot of the Python analysis dashboard showing NLMS convergence and spectrograms)*
+
 
 ## 🛠️ Hardware Design (RTL Modules)
 
@@ -45,15 +44,13 @@ The validated algorithm was translated into synthesizable Verilog RTL. Core modu
 
 The top-level `design_1` integrates the custom AXI4-Stream IP with the ZYNQ7 Processing System, AXI DMA engines (for streaming noise/voice samples from DDR), and AXI SmartConnect fabric.
 
-![Vivado Block Design](docs/images/vivado_block_design.png)
-*(Complete `design_1` block design in Vivado IP Integrator)*
+
 
 ## 📈 Verification & Simulation
 
 The custom datapath was verified through behavioral and post-synthesis functional simulations, running for 1000ns with identical stimulus (noise/voice sample arrays) confirming functional equivalence.
 
-![Behavioral Simulation](docs/images/behavioral_simulation.png)
-*(Behavioral simulation of `tb_LMS_Filter` showing AXI-Stream valid/ready handshaking)*
+
 
 ## 🚀 Implementation Results
 
@@ -85,3 +82,26 @@ AVC_Project/
 2. Resolve high-severity timing-check warnings by adding proper I/O timing constraints to `pynq_z2_final.xdc`.
 3. Begin RTL design of the ANC pipeline (FxLMS controller).
 4. Integrate the matched-wavelet denoising stage into the FPGA datapath or evaluate a hybrid ARM+FPGA split.
+
+## 📸 Project Screenshots
+
+<details>
+<summary>Click to view screenshots (from `public/` directory)</summary>
+
+![Screenshot 1](public/Screenshot_2026-06-25_144536.png)
+![Screenshot 2](public/Screenshot_2026-07-14_160401.png)
+![Screenshot 3](public/Screenshot_2026-07-14_160510.png)
+![Screenshot 4](public/Screenshot_2026-07-14_160702.png)
+![Screenshot 5](public/Screenshot_2026-07-15_160251.png)
+![Screenshot 6](public/Screenshot_2026-07-15_160513.png)
+![Screenshot 7](public/Screenshot_2026-07-15_160532.png)
+![Screenshot 8](public/Screenshot_2026-07-15_160650.png)
+![Screenshot 9](public/Screenshot_2026-07-15_160708.png)
+![Screenshot 10](public/Screenshot_2026-07-15_160721.png)
+![Screenshot 11](public/Screenshot_2026-07-15_172433.png)
+![Screenshot 12](public/Screenshot_2026-07-17_142618.png)
+![Screenshot 13](public/Screenshot_2026-07-17_143131.png)
+![Screenshot 14](public/Screenshot_2026-07-18_120755.png)
+![Screenshot 15](public/Screenshot_2026-07-18_124333.png)
+
+</details>
