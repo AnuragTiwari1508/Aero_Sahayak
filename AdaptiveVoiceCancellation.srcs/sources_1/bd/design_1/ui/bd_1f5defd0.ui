@@ -1,0 +1,72 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.538412",
+   "Default View_TopLeft":"-193,4",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 3160 -y 190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 3160 -y 210 -defaultsOSRD
+preplace port gpio_rtl_0 -pg 1 -lvl 10 -x 3160 -y 480 -defaultsOSRD
+preplace port gpio_rtl_1 -pg 1 -lvl 10 -x 3160 -y 500 -defaultsOSRD
+preplace inst ps7 -pg 1 -lvl 9 -x 2900 -y 270 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 1010 -defaultsOSRD
+preplace inst psr_100 -pg 1 -lvl 2 -x 420 -y 890 -defaultsOSRD
+preplace inst psr_50 -pg 1 -lvl 2 -x 420 -y 1070 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 760 -y 440 -defaultsOSRD
+preplace inst axi_dma_noise -pg 1 -lvl 4 -x 1180 -y 90 -defaultsOSRD
+preplace inst axi_dma_voice -pg 1 -lvl 6 -x 1850 -y 240 -defaultsOSRD
+preplace inst bram_ctrl_noise -pg 1 -lvl 4 -x 1180 -y 650 -defaultsOSRD
+preplace inst bram_noise -pg 1 -lvl 5 -x 1530 -y 650 -defaultsOSRD
+preplace inst bram_ctrl_voice -pg 1 -lvl 4 -x 1180 -y 870 -defaultsOSRD
+preplace inst bram_voice -pg 1 -lvl 5 -x 1530 -y 870 -defaultsOSRD
+preplace inst axi_gpio_ctrl -pg 1 -lvl 4 -x 1180 -y 490 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 3 -x 760 -y 680 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 4 -x 1180 -y 270 -defaultsOSRD
+preplace inst xlconcat_irq -pg 1 -lvl 3 -x 760 -y 230 -defaultsOSRD
+preplace inst axi_pc_noise -pg 1 -lvl 8 -x 2500 -y 80 -defaultsOSRD
+preplace inst axi_smc_voice -pg 1 -lvl 7 -x 2170 -y 210 -defaultsOSRD
+preplace inst axi_pc_voice -pg 1 -lvl 8 -x 2500 -y 260 -defaultsOSRD
+preplace inst axis_fifo_lms -pg 1 -lvl 5 -x 1530 -y 210 -defaultsOSRD
+preplace netloc axi_dma_noise_mm2s_introut 1 2 3 630 310 940J 360 1340
+preplace netloc axi_dma_voice_mm2s_introut 1 2 5 610 140 1000J 370 1380J 410 NJ 410 2020
+preplace netloc axi_dma_voice_s2mm_introut 1 2 5 600 130 1010J 380 1340J 420 NJ 420 2010
+preplace netloc axi_intc_0_irq 1 4 5 1380 90 NJ 90 NJ 90 2360J 170 2680J
+preplace netloc clk_wiz_0_clk_out1 1 1 8 220 710 620 570 970 410 1370 130 1690 100 2040 100 2330 180 2670
+preplace netloc clk_wiz_0_clk_out2 1 1 1 250 1010n
+preplace netloc clk_wiz_0_locked 1 1 1 240 930n
+preplace netloc ps7_FCLK_CLK0 1 0 10 10 780 NJ 780 630J 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 3120
+preplace netloc ps7_FCLK_RESET0_N 1 0 10 20 930 230 790 590J 800 1020J 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 3110
+preplace netloc psr_100_peripheral_aresetn 1 2 6 610 320 980 390 1400 110 1670 110 2030 110 2340
+preplace netloc xlconcat_irq_dout 1 3 1 990 230n
+preplace netloc axi_dma_noise_M_AXIS_MM2S 1 4 1 1410 80n
+preplace netloc axi_dma_noise_M_AXI_MM2S 1 4 4 NJ 60 NJ 60 NJ 60 N
+preplace netloc axi_dma_voice_M_AXI_MM2S 1 6 1 N 180
+preplace netloc axi_dma_voice_M_AXI_S2MM 1 6 1 N 200
+preplace netloc axi_gpio_ctrl_GPIO 1 4 6 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ
+preplace netloc axi_gpio_ctrl_GPIO2 1 4 6 NJ 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc axi_pc_noise_M_AXI 1 8 1 2690 80n
+preplace netloc axi_pc_voice_M_AXI 1 8 1 N 260
+preplace netloc axi_smc_M00_AXI 1 3 1 900 60n
+preplace netloc axi_smc_M01_AXI 1 3 3 NJ 400 NJ 400 1680
+preplace netloc axi_smc_M02_AXI 1 3 1 920 420n
+preplace netloc axi_smc_M03_AXI 1 3 1 900 440n
+preplace netloc axi_smc_M04_AXI 1 3 1 910 460n
+preplace netloc axi_smc_M05_AXI 1 3 1 930 240n
+preplace netloc axi_smc_M06_AXI 1 2 2 630 560 890
+preplace netloc axi_smc_voice_M00_AXI 1 7 1 2300 210n
+preplace netloc axis_fifo_lms_M_AXIS 1 5 1 N 210
+preplace netloc bram_ctrl_noise_BRAM_PORTA 1 4 1 NJ 650
+preplace netloc bram_ctrl_voice_BRAM_PORTA 1 4 1 NJ 870
+preplace netloc ps7_DDR 1 9 1 NJ 190
+preplace netloc ps7_FIXED_IO 1 9 1 NJ 210
+preplace netloc ps7_M_AXI_GP0 1 2 8 620 150 1020J 180 1390J 120 NJ 120 NJ 120 2350J 160 2640J 130 3110
+levelinfo -pg 1 -10 120 420 760 1180 1530 1850 2170 2500 2900 3160
+pagesize -pg 1 -db -bbox -sgen -10 0 3280 1170
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"2",
+   "da_ps7_cnt":"1"
+}
