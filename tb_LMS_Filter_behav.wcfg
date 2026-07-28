@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_LMS_Filter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_LMS_Filter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="173.001 ns"></ZoomEndTime>
+      <Cursor1Time time="10.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_LMS_Filter/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_x_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_x_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_x_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_x_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_x_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_x_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_x_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_x_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_x_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_d_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_d_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_d_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_d_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_d_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_d_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/s_axis_d_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_d_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_d_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/m_axis_e_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_e_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_e_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/m_axis_e_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_e_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_e_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/m_axis_e_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_e_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_e_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/noise_mem" type="array">
+      <obj_property name="ElementShortName">noise_mem[0:999][15:0]</obj_property>
+      <obj_property name="ObjectShortName">noise_mem[0:999][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/voice_mem" type="array">
+      <obj_property name="ElementShortName">voice_mem[0:999][15:0]</obj_property>
+      <obj_property name="ObjectShortName">voice_mem[0:999][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Reversed">false</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/output_file" type="array">
+      <obj_property name="ElementShortName">output_file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/sample_count" type="array">
+      <obj_property name="ElementShortName">sample_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/out_count" type="array">
+      <obj_property name="ElementShortName">out_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/FILTER_TAPS" type="array">
+      <obj_property name="ElementShortName">FILTER_TAPS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FILTER_TAPS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/N_SAMPLES" type="array">
+      <obj_property name="ElementShortName">N_SAMPLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_SAMPLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_LMS_Filter/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>
