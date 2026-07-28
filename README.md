@@ -69,17 +69,17 @@ Before RTL design, the algorithm was validated in Python (NumPy / SciPy / libros
 ### Full Analysis Dashboard
 > FPGA-Centric Airborne ANC with Real Audio — NLMS convergence, spectrograms, μ-sweep, wavelet attenuation, and full pipeline overlay
 
-![Full Analysis Dashboard](./public/Screenshot_2026-07-18_124333.png)
+![Full Analysis Dashboard](./public/Screenshot%202026-07-18%20124333.png)
 
 ### Wavelet Denoising Results
 > Matched-Wavelet Denoising (Lifting Scheme) — Before vs. After waveforms, final output spectrogram, and per-scale attenuation (D1: 31.1 dB, D2: 34.8 dB, D3: 27.5 dB, D4: 24.2 dB)
 
-![Wavelet Denoising Stage](./public/Screenshot_2026-07-17_142618.png)
+![Wavelet Denoising Stage](./public/Screenshot%202026-07-17%20142618.png)
 
 ### Full Pipeline Summary — Real Audio
 > Total Attenuation: 1.9 dB across 5 LMS loops + Wavelet, with attenuation-per-loop and μ decay curves
 
-![Full Pipeline Summary](./public/Screenshot_2026-07-18_120755.png)
+![Full Pipeline Summary](./public/Screenshot%202026-07-18%20120755.png)
 
 ---
 
@@ -105,10 +105,10 @@ The validated algorithm was translated into synthesizable Verilog RTL:
 The top-level `design_1` integrates the custom AXI4-Stream IP with the ZYNQ7 Processing System, AXI DMA engines (noise/voice streaming from DDR), AXI SmartConnect fabric, BRAMs, GPIO, and interrupt controller.
 
 ### Block Design (IP Integrator)
-![Block Design - Full View](./public/Screenshot_2026-07-14_160401.png)
+![Block Design - Full View](./public/Screenshot%202026-07-14%20160401.png)
 
 ### Block Design (Source Hierarchy + Clock Domain)
-![Block Design - Source Hierarchy](./public/Screenshot_2026-07-17_143131.png)
+![Block Design - Source Hierarchy](./public/Screenshot%202026-07-17%20143131.png)
 
 ---
 
@@ -117,17 +117,17 @@ The top-level `design_1` integrates the custom AXI4-Stream IP with the ZYNQ7 Pro
 ### Behavioral Simulation — `tb_LMS_Filter`
 > XSim behavioral simulation (1000 ns) showing AXI-Stream valid/ready handshaking, noise/voice sample streaming, and error output convergence
 
-![Behavioral Simulation](./public/Screenshot_2026-07-14_160510.png)
+![Behavioral Simulation](./public/Screenshot%202026-07-14%20160510.png)
 
 ### Post-Synthesis Functional Simulation
 > Post-synthesis simulation confirming functional equivalence with behavioral results (gain = 2240.895)
 
-![Post-Synthesis Simulation](./public/Screenshot_2026-07-14_160702.png)
+![Post-Synthesis Simulation](./public/Screenshot%202026-07-14%20160702.png)
 
 ### PCPI Co-Processor Interface Simulation
 > Detailed waveform of the PCPI (Pico Co-Processor Interface) showing instruction decode, memory read/write, and test execution
 
-![PCPI Simulation](./public/Screenshot_2026-06-25_144536.png)
+![PCPI Simulation](./public/Screenshot%202026-06-25%20144536.png)
 
 ---
 
@@ -138,37 +138,37 @@ Implementation (Optimize → Place → Route → Bitstream) completed successful
 ### Timing Summary & Device Floorplan
 > WNS: 2.696 ns | WHS: 0.020 ns | WPWS: 3.000 ns — All timing constraints met ✅
 
-![Timing Summary](./public/Screenshot_2026-07-15_160251.png)
+![Timing Summary](./public/Screenshot%202026-07-15%20160251.png)
 
 ### Source Hierarchy & Check Timing
 > Design sources (10 modules), timing check report with no_input_delay / no_output_delay warnings
 
-![Check Timing](./public/Screenshot_2026-07-15_160513.png)
+![Check Timing](./public/Screenshot%202026-07-15%20160513.png)
 
 ### Synthesis & Implementation Reports
 > Utilization reports, synthesis reports for all out-of-context modules
 
-![Reports](./public/Screenshot_2026-07-15_160532.png)
+![Reports](./public/Screenshot%202026-07-15%20160532.png)
 
 ### Power Analysis — Summary
 > Total On-Chip Power: **1.912 W** | Dynamic: 1.767 W (92%) | PS7: 1.535 W (85%) | Junction Temp: 47.1°C
 
-![Power Summary](./public/Screenshot_2026-07-15_160650.png)
+![Power Summary](./public/Screenshot%202026-07-15%20160650.png)
 
 ### Power Analysis — Hierarchical Breakdown
 > Hierarchical power distribution across design_1_wrapper, design_1_i, leaf cells, and GPIO IOBUFs
 
-![Power Hierarchical](./public/Screenshot_2026-07-15_172433.png)
+![Power Hierarchical](./public/Screenshot%202026-07-15%20172433.png)
 
 ### Schematic View — I/O Ports & Nets
 > Post-implementation schematic: 17 Cells, 146 I/O Ports, 178 Nets
 
-![Schematic View](./public/Screenshot_2026-07-15_160708.png)
+![Schematic View](./public/Screenshot%202026-07-15%20160708.png)
 
 ### Power Report Configuration
 > Report Power dialog — Environment settings, thermal analysis configuration
 
-![Power Report Config](./public/Screenshot_2026-07-15_160721.png)
+![Power Report Config](./public/Screenshot%202026-07-15%20160721.png)
 
 ---
 
